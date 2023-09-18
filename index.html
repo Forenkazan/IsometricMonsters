@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | IsometricProj</title>
+    <title>Unity WebGL Player | Animated Isometric Monsters (Legendaria)</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1422 height=800></canvas>
+      <canvas id="unity-canvas" width=1511 height=850></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">IsometricProj</div>
+        <div id="unity-build-title">Animated Isometric Monsters (Legendaria)</div>
       </div>
     </div>
     <script>
@@ -56,14 +56,14 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/webgl1.loader.js";
+      var loaderUrl = buildUrl + "/IsometricMonsters.loader.js";
       var config = {
-        dataUrl: buildUrl + "/webgl1.data",
-        frameworkUrl: buildUrl + "/webgl1.framework.js",
-        codeUrl: buildUrl + "/webgl1.wasm",
+        dataUrl: buildUrl + "/IsometricMonsters.data",
+        frameworkUrl: buildUrl + "/IsometricMonsters.framework.js",
+        codeUrl: buildUrl + "/IsometricMonsters.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "IsometricProj",
+        productName: "Animated Isometric Monsters (Legendaria)",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
@@ -93,8 +93,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "1422px";
-        canvas.style.height = "800px";
+        canvas.style.width = "1511px";
+        canvas.style.height = "850px";
       }
 
       loadingBar.style.display = "block";
